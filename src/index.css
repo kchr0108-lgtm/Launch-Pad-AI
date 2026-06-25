@@ -58,13 +58,6 @@
   gap: 12px;
 }
 
-.navbar__icon {
-  width: 2rem;
-  height: 2rem;
-  border-radius: 9999px;
-  object-fit: cover;
-}
-
 .navbar__logo {
   font-size: 1.25rem;
   font-weight: 700;
@@ -310,6 +303,16 @@
   padding: 80px 1rem;
 }
 
+.light-bg {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+.dark-bg {
+  background-color: #0f1419;
+  color: #f8fafc;
+}
+
 .form-panel {
   max-width: 580px;
   width: 100%;
@@ -334,6 +337,44 @@
   border: 1px solid #ddd;
   font-size: 1rem;
   box-sizing: border-box;
+}
+
+/* Dark mode form input styles */
+.dark-bg .ai-form input,
+.dark-bg .ai-form select {
+  background-color: #1a2332;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+.dark-bg .ai-form input::placeholder {
+  color: #94a3b8;
+}
+
+.dark-bg .ai-form input:focus,
+.dark-bg .ai-form select:focus {
+  outline: none;
+  border-color: #64748b;
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.1);
+}
+
+/* Light mode form input styles */
+.light-bg .ai-form input,
+.light-bg .ai-form select {
+  background-color: #ffffff;
+  color: #111827;
+  border-color: #e2e8f0;
+}
+
+.light-bg .ai-form input::placeholder {
+  color: #94a3b8;
+}
+
+.light-bg .ai-form input:focus,
+.light-bg .ai-form select:focus {
+  outline: none;
+  border-color: #64748b;
+  box-shadow: 0 0 0 3px rgba(100, 116, 139, 0.1);
 }
 
 .applicant-card {
