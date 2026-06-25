@@ -6,11 +6,6 @@ const Navbar = ({ theme = 'light', onThemeToggle }) => {
   return (
     <nav className={`navbar navbar--${theme}`}>
       <div className="navbar__brand">
-        <img
-          className="navbar__icon"
-          alt="Launch Pad AI logo"
-          src="/favicon.svg"
-        />
         <span className="navbar__logo">Launch Pad AI</span>
       </div>
 
