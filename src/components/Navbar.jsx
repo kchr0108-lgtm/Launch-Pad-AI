@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import lightFavicon from '../assets/favicon-light.svg'
+import darkFavicon from '../assets/favicon-dark.svg'
 
 const Navbar = ({ theme = 'light', onThemeToggle }) => {
   const [isOpen, setIsOpen] = useState(false)
@@ -6,6 +8,11 @@ const Navbar = ({ theme = 'light', onThemeToggle }) => {
   return (
     <nav className={`navbar navbar--${theme}`}>
       <div className="navbar__brand">
+        <img 
+          src={theme === 'light' ? lightFavicon : darkFavicon} 
+          alt="Logo" 
+          className="navbar__icon" 
+        />
         <span className="navbar__logo">Launch Pad AI</span>
       </div>
 
