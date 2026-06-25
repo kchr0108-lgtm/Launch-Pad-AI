@@ -6,7 +6,7 @@ const Navbar = ({ theme = 'light', onThemeToggle }) => {
   return (
     <nav className={`navbar navbar--${theme}`}>
       <div className="navbar__brand">
-        <span className="navbar__logo">Launch Pad AI</span>
+        <h3 className="navbar__logo">Launch Pad AI</h3>
       </div>
 
       <div className="navbar__actions">
